@@ -4,7 +4,7 @@ echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/source
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update && apt-get upgrade -y
-sudo apt install -y openjdk-8-jre jenkins nginx python-certbot-nginx libssl-dev libffi-dev python-dev python-pip docker git
+sudo apt install -y openjdk-8-jre jenkins nginx python-certbot-nginx libssl-dev libffi-dev python-dev python-pip docker.io git
 sudo ufw allow OpenSSH
 sudo ufw allow 'Nginx Full'
 sudo ufw enable
